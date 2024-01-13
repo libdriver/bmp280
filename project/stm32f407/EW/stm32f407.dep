@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>3350219342</fileChecksum>
+    <configuration>
+        <name>Release</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\interface\src\delay.c</file>
+            <file>$PROJ_DIR$\..\interface\src\iic.c</file>
+            <file>$PROJ_DIR$\..\usr\src\main.c</file>
+            <file>$PROJ_DIR$\..\interface\src\clock.c</file>
+            <file>$PROJ_DIR$\..\usr\src\stm32f4xx_hal_msp.c</file>
+            <file>$PROJ_DIR$\..\usr\src\getopt.c</file>
+            <file>$PROJ_DIR$\..\interface\src\uart.c</file>
+            <file>$PROJ_DIR$\..\usr\src\stm32f4xx_it.c</file>
+            <file>$PROJ_DIR$\..\usr\src\system_stm32f4xx.c</file>
+            <file>$PROJ_DIR$\..\usr\src\shell.c</file>
+            <file>$PROJ_DIR$\..\interface\src\spi.c</file>
+            <file>$PROJ_DIR$\..\driver\src\stm32f407_driver_bmp280_interface.c</file>
+            <file>$PROJ_DIR$\..\..\..\src\driver_bmp280.c</file>
+            <file>$PROJ_DIR$\..\..\..\test\driver_bmp280_read_test.c</file>
+            <file>$PROJ_DIR$\..\..\..\test\driver_bmp280_register_test.c</file>
+            <file>$PROJ_DIR$\..\..\..\example\driver_bmp280_shot.c</file>
+            <file>$PROJ_DIR$\..\..\..\example\driver_bmp280_basic.c</file>
+        </outputs>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>
