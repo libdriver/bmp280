@@ -173,84 +173,84 @@ static uint8_t a_bmp280_get_nvm_calibration(bmp280_handle_t *handle)
 
         return 1;                                                                              /* return error */
     }
-    handle->t1 = (uint16_t)buf[1] <<8 | buf[0];                                                /* set t1 */
+    handle->t1 = (uint16_t)buf[1] << 8 | buf[0];                                               /* set t1 */
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_NVM_PAR_T2_L, (uint8_t *)buf, 2) != 0)        /* read t2 */
     {
         handle->debug_print("bmp280: get calibration data failed.\n");                         /* get calibration data failed */
 
         return 1;                                                                              /* return error */
     }
-    handle->t2 = (int16_t)((uint16_t)buf[1] <<8 | buf[0]);                                     /* set t2 */
+    handle->t2 = (int16_t)((uint16_t)buf[1] << 8 | buf[0]);                                    /* set t2 */
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_NVM_PAR_T3_L, (uint8_t *)buf, 2) != 0)        /* read t3 */
     {
         handle->debug_print("bmp280: get calibration data failed.\n");                         /* get calibration data failed */
 
         return 1;                                                                              /* return error */
     }
-    handle->t3 = (int16_t)((uint16_t)buf[1] <<8 | buf[0]);                                     /* set t3 */
+    handle->t3 = (int16_t)((uint16_t)buf[1] << 8 | buf[0]);                                    /* set t3 */
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_NVM_PAR_P1_L, (uint8_t *)buf, 2) != 0)        /* read p1 */
     {
         handle->debug_print("bmp280: get calibration data failed.\n");                         /* get calibration data failed */
 
         return 1;                                                                              /* return error */
     }
-    handle->p1 = (uint16_t)buf[1] <<8 | buf[0];                                                /* set p1 */
+    handle->p1 = (uint16_t)buf[1] << 8 | buf[0];                                               /* set p1 */
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_NVM_PAR_P2_L, (uint8_t *)buf, 2) != 0)        /* read p2 */
     {
         handle->debug_print("bmp280: get calibration data failed.\n");                         /* get calibration data failed */
 
         return 1;                                                                              /* return error */
     }
-    handle->p2 = (int16_t)((uint16_t)buf[1] <<8 | buf[0]);                                     /* set p2 */
+    handle->p2 = (int16_t)((uint16_t)buf[1] << 8 | buf[0]);                                    /* set p2 */
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_NVM_PAR_P3_L, (uint8_t *)buf, 2) != 0)        /* read p3 */
     {
         handle->debug_print("bmp280: get calibration data failed.\n");                         /* get calibration data failed */
 
         return 1;                                                                              /* return error */
     }
-    handle->p3 = (int16_t)((uint16_t)buf[1] <<8 | buf[0]);                                     /* set p3 */
+    handle->p3 = (int16_t)((uint16_t)buf[1] << 8 | buf[0]);                                    /* set p3 */
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_NVM_PAR_P4_L, (uint8_t *)buf, 2) != 0)        /* read p4 */
     {
         handle->debug_print("bmp280: get calibration data failed.\n");                         /* get calibration data failed */
 
         return 1;                                                                              /* return error */
     }
-    handle->p4 = (int16_t)((uint16_t)buf[1] <<8 | buf[0]);                                     /* set p4 */
+    handle->p4 = (int16_t)((uint16_t)buf[1] << 8 | buf[0]);                                    /* set p4 */
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_NVM_PAR_P5_L, (uint8_t *)buf, 2) != 0)        /* read p5 */
     {
         handle->debug_print("bmp280: get calibration data failed.\n");                         /* get calibration data failed */
 
         return 1;                                                                              /* return error */
     }
-    handle->p5 = (int16_t)((uint16_t)buf[1] <<8 | buf[0]);                                     /* set p5 */
+    handle->p5 = (int16_t)((uint16_t)buf[1] << 8 | buf[0]);                                    /* set p5 */
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_NVM_PAR_P6_L, (uint8_t *)buf, 2) != 0)        /* read p6 */
     {
         handle->debug_print("bmp280: get calibration data failed.\n");                         /* get calibration data failed */
 
         return 1;                                                                              /* return error */
     }
-    handle->p6 = (int16_t)((uint16_t)buf[1] <<8 | buf[0]);                                     /* set p6 */
+    handle->p6 = (int16_t)((uint16_t)buf[1] << 8 | buf[0]);                                    /* set p6 */
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_NVM_PAR_P7_L, (uint8_t *)buf, 2) != 0)        /* read p7 */
     {
         handle->debug_print("bmp280: get calibration data failed.\n");                         /* get calibration data failed */
 
         return 1;                                                                              /* return error */
     }
-    handle->p7 = (int16_t)((uint16_t)buf[1] <<8 | buf[0]);                                     /* set p7 */
+    handle->p7 = (int16_t)((uint16_t)buf[1] << 8 | buf[0]);                                    /* set p7 */
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_NVM_PAR_P8_L, (uint8_t *)buf, 2) != 0)        /* read p8 */
     {
         handle->debug_print("bmp280: get calibration data failed.\n");                         /* get calibration data failed */
 
         return 1;                                                                              /* return error */
     }
-    handle->p8 = (int16_t)((uint16_t)buf[1] <<8 | buf[0]);                                     /* set p8 */
+    handle->p8 = (int16_t)((uint16_t)buf[1] << 8 | buf[0]);                                    /* set p8 */
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_NVM_PAR_P9_L, (uint8_t *)buf, 2) != 0)        /* read p9 */
     {
         handle->debug_print("bmp280: get calibration data failed.\n");                         /* get calibration data failed */
 
         return 1;                                                                              /* return error */
     }
-    handle->p9 = (int16_t)((uint16_t)buf[1] <<8 | buf[0]);                                     /* set p9 */
+    handle->p9 = (int16_t)((uint16_t)buf[1] << 8 | buf[0]);                                    /* set p9 */
     handle->t_fine = 0;                                                                        /* init 0 */
 
     return 0;                                                                                  /* success return 0 */
