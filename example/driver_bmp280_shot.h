@@ -52,7 +52,7 @@ extern "C"{
  * @brief bmp280 shot example default definition
  */
 #define BMP280_SHOT_DEFAULT_TEMPERATURE_OVERSAMPLING        BMP280_OVERSAMPLING_x2            /**< temperatue oversampling x2 */
-#define BMP280_SHOT_DEFAULT_PRESSURE_OVERSAMPLING           BMP280_OVERSAMPLING_x16           /**< pressure oversampling x2 */
+#define BMP280_SHOT_DEFAULT_PRESSURE_OVERSAMPLING           BMP280_OVERSAMPLING_x16           /**< pressure oversampling x16 */
 #define BMP280_SHOT_DEFAULT_STANDBY_TIME                    BMP280_STANDBY_TIME_0P5_MS        /**< standby time 0.5ms */
 #define BMP280_SHOT_DEFAULT_FILTER                          BMP280_FILTER_COEFF_16            /**< filter coeff 16 */
 #define BMP280_SHOT_DEFAULT_SPI_WIRE                        BMP280_SPI_WIRE_4                 /**< spi wire 4 */
