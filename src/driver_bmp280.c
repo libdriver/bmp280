@@ -1191,7 +1191,7 @@ uint8_t bmp280_read_pressure(bmp280_handle_t *handle, uint32_t *pressure_raw, fl
         res = a_bmp280_iic_spi_read(handle, BMP280_REG_PRESS_MSB, buf, 6);                     /* read temperature and pressure */
         if (res != 0)
         {
-            handle->debug_print("bmp280: read temperature failed.\n");                         /* read temperature failed */
+            handle->debug_print("bmp280: read failed.\n");                                     /* read failed */
 
             return 1;                                                                          /* return error */
         }
@@ -1257,7 +1257,7 @@ uint8_t bmp280_read_pressure(bmp280_handle_t *handle, uint32_t *pressure_raw, fl
         res = a_bmp280_iic_spi_read(handle, BMP280_REG_PRESS_MSB, buf, 6);                     /* read temperature and pressure */
         if (res != 0)
         {
-            handle->debug_print("bmp280: read temperature failed.\n");                         /* read temperature failed */
+            handle->debug_print("bmp280: read failed.\n");                                     /* read failed */
 
             return 1;                                                                          /* return error */
         }
@@ -1327,7 +1327,7 @@ uint8_t bmp280_read_temperature(bmp280_handle_t *handle, uint32_t *temperature_r
         res = a_bmp280_iic_spi_read(handle, BMP280_REG_PRESS_MSB, buf, 6);                     /* read temperature and pressure */
         if (res != 0)
         {
-            handle->debug_print("bmp280: read temperature failed.\n");                         /* read temperature failed */
+            handle->debug_print("bmp280: read failed.\n");                                     /* read failed */
 
             return 1;                                                                          /* return error */
         }
@@ -1383,7 +1383,7 @@ uint8_t bmp280_read_temperature(bmp280_handle_t *handle, uint32_t *temperature_r
         res = a_bmp280_iic_spi_read(handle, BMP280_REG_PRESS_MSB, buf, 6);                     /* read temperature and pressure */
         if (res != 0)
         {
-            handle->debug_print("bmp280: read temperature failed.\n");                         /* read temperature failed */
+            handle->debug_print("bmp280: read failed.\n");                                     /* read failed */
 
             return 1;                                                                          /* return error */
         }
@@ -1446,7 +1446,7 @@ uint8_t bmp280_read_temperature_pressure(bmp280_handle_t *handle, uint32_t *temp
         res = a_bmp280_iic_spi_read(handle, BMP280_REG_PRESS_MSB, buf, 6);                     /* read temperature and pressure */
         if (res != 0)
         {
-            handle->debug_print("bmp280: read temperature failed.\n");                         /* read temperature failed */
+            handle->debug_print("bmp280: read failed.\n");                                     /* read failed */
 
             return 1;                                                                          /* return error */
         }
@@ -1512,7 +1512,7 @@ uint8_t bmp280_read_temperature_pressure(bmp280_handle_t *handle, uint32_t *temp
         res = a_bmp280_iic_spi_read(handle, BMP280_REG_PRESS_MSB, buf, 6);                     /* read temperature and pressure */
         if (res != 0)
         {
-            handle->debug_print("bmp280: read temperature failed.\n");                         /* read temperature failed */
+            handle->debug_print("bmp280: read failed.\n");                                     /* read failed */
 
             return 1;                                                                          /* return error */
         }
