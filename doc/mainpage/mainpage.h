@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver BMP280
- * @brief     libdriver bmp280 is a full function driver of bmp280 and it can run in both MCU and Linux platform.
+ * @brief     LibDriver BMP280 is a full function driver of BMP280 and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
