@@ -608,11 +608,23 @@ uint8_t bmp280_deinit(bmp280_handle_t *handle)
 
         return 4;                                                                   /* return error */
     }
-    if (handle->iic_deinit() != 0)                                                  /* iic deinit */
+    if (handle->iic_spi == BMP280_INTERFACE_IIC)                                    /* iic interface */
     {
-        handle->debug_print("bmp280: iic deinit failed.\n");                        /* iic deinit failed */
+        if (handle->iic_deinit() != 0)                                              /* iic deinit */
+        {
+            handle->debug_print("bmp280: iic deinit failed.\n");                    /* iic deinit failed */
 
-        return 1;                                                                   /* return error */
+            return 1;                                                               /* return error */
+        }
+    }
+    else                                                                            /* spi interface */
+    {
+        if (handle->spi_deinit() != 0)                                              /* spi deinit */
+        {
+            handle->debug_print("bmp280: spi deinit failed.\n");                    /* spi deinit failed */
+
+            return 1;                                                               /* return error */
+        }
     }
     handle->inited = 0;                                                             /* flag close */
 
