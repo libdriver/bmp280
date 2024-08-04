@@ -8,7 +8,7 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/bmp280/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-BMP280是一种绝对气压传感器，特别适用于移动应用。它的小尺寸和低功耗允许在电池供电的设备中实现，如手机、GPS模块或手表。BMP280基于博世久经考验的压阻式压力传感器技术，具有高精度和线性、长期稳定性和高EMC稳健性。众多的设备操作选项保证了最高的灵活性。该设备在功耗、分辨率和滤波器性能方面进行了优化。
+BMP280是一种绝对气压传感器，特别适用于移动应用。它的小尺寸和低功耗允许在电池供电的设备中实现，如手机、GPS模块或手表。BMP280基于博世久经考验的压阻式压力传感器技术，具有高精度和高线性、长期稳定性和高EMC稳健性。众多的设备操作选项保证了最高的灵活性。该设备在功耗、分辨率和滤波器性能方面进行了优化。
 
 LibDriver BMP280是LibDriver推出的BMP280全功能驱动，该驱动提供压强温度连续读取、压强温度单次读取等功能并且它符合MISRA标准。
 
