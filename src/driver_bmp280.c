@@ -89,10 +89,10 @@
 
 /**
  * @brief      read multiple bytes
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[in]  reg is the register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data length
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[in]  reg register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data length
  * @return     status code
  *             - 0 success
  *             - 1 iic spi read failed
@@ -123,10 +123,10 @@ static uint8_t a_bmp280_iic_spi_read(bmp280_handle_t *handle, uint8_t reg, uint8
 
 /**
  * @brief     write multiple bytes
- * @param[in] *handle points to a bmp280 handle structure
- * @param[in] reg is the register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *handle pointer to a bmp280 handle structure
+ * @param[in] reg register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 iic spi write failed
@@ -157,7 +157,7 @@ static uint8_t a_bmp280_iic_spi_write(bmp280_handle_t *handle, uint8_t reg, uint
 
 /**
  * @brief     get nvm calibration
- * @param[in] *handle points to a bmp280 handle structure
+ * @param[in] *handle pointer to a bmp280 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 get calibration data failed
@@ -258,9 +258,9 @@ static uint8_t a_bmp280_get_nvm_calibration(bmp280_handle_t *handle)
 
 /**
  * @brief      compensate temperature
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[in]  raw is the set raw
- * @param[out] *output points to an output buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[in]  raw raw data
+ * @param[out] *output pointer to an output buffer
  * @return     status code
  *             - 0 success
  *             - 1 compensate temperature failed
@@ -297,9 +297,9 @@ static uint8_t a_bmp280_compensate_temperature(bmp280_handle_t *handle, uint32_t
 
 /**
  * @brief      compensate pressure
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[in]  raw is the set raw
- * @param[out] *output points to an output buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[in]  raw raw data
+ * @param[out] *output pointer to an output buffer
  * @return     status code
  *             - 0 success
  *             - 1 compensate pressure failed
@@ -354,8 +354,8 @@ static uint8_t a_bmp280_compensate_pressure(bmp280_handle_t *handle, uint32_t ra
 
 /**
  * @brief     set the iic address pin
- * @param[in] *handle points to a bmp280 handle structure
- * @param[in] addr_pin is the iic address pin
+ * @param[in] *handle pointer to a bmp280 handle structure
+ * @param[in] addr_pin iic address pin
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -375,8 +375,8 @@ uint8_t bmp280_set_addr_pin(bmp280_handle_t *handle, bmp280_address_t addr_pin)
 
 /**
  * @brief      get the iic address pin
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *addr_pin points to an iic address pin buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *addr_pin pointer to an iic address pin buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -396,8 +396,8 @@ uint8_t bmp280_get_addr_pin(bmp280_handle_t *handle, bmp280_address_t *addr_pin)
 
 /**
  * @brief     set the interface
- * @param[in] *handle points to a bmp280 handle structure
- * @param[in] interface is the chip interface
+ * @param[in] *handle pointer to a bmp280 handle structure
+ * @param[in] interface chip interface
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -417,8 +417,8 @@ uint8_t bmp280_set_interface(bmp280_handle_t *handle, bmp280_interface_t interfa
 
 /**
  * @brief      get the interface
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *interface points to a chip interface buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *interface pointer to a chip interface buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -438,7 +438,7 @@ uint8_t bmp280_get_interface(bmp280_handle_t *handle, bmp280_interface_t *interf
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a bmp280 handle structure
+ * @param[in] *handle pointer to a bmp280 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic or spi initialization failed
@@ -572,7 +572,7 @@ uint8_t bmp280_init(bmp280_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to a bmp280 handle structure
+ * @param[in] *handle pointer to a bmp280 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic deinit failed
@@ -633,7 +633,7 @@ uint8_t bmp280_deinit(bmp280_handle_t *handle)
 
 /**
  * @brief     soft reset
- * @param[in] *handle points to a bmp280 handle structure
+ * @param[in] *handle pointer to a bmp280 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 soft reset failed
@@ -668,8 +668,8 @@ uint8_t bmp280_soft_reset(bmp280_handle_t *handle)
 
 /**
  * @brief      get status
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get status failed
@@ -700,8 +700,8 @@ uint8_t bmp280_get_status(bmp280_handle_t *handle, uint8_t *status)
 
 /**
  * @brief     set temperatue oversampling
- * @param[in] *handle points to a bmp280 handle structure
- * @param[in] oversampling is the temperatue oversampling
+ * @param[in] *handle pointer to a bmp280 handle structure
+ * @param[in] oversampling temperatue oversampling
  * @return    status code
  *            - 0 success
  *            - 1 set temperatue oversampling failed
@@ -742,8 +742,8 @@ uint8_t bmp280_set_temperatue_oversampling(bmp280_handle_t *handle, bmp280_overs
 
 /**
  * @brief      get temperatue oversampling
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *oversampling points to a oversampling buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *oversampling pointer to a oversampling buffer
  * @return     status code
  *             - 0 success
  *             - 1 get temperatue oversampling failed
@@ -777,8 +777,8 @@ uint8_t bmp280_get_temperatue_oversampling(bmp280_handle_t *handle, bmp280_overs
 
 /**
  * @brief     set pressure oversampling
- * @param[in] *handle points to a bmp280 handle structure
- * @param[in] oversampling is the pressure oversampling
+ * @param[in] *handle pointer to a bmp280 handle structure
+ * @param[in] oversampling pressure oversampling
  * @return    status code
  *            - 0 success
  *            - 1 set pressure oversampling failed
@@ -819,8 +819,8 @@ uint8_t bmp280_set_pressure_oversampling(bmp280_handle_t *handle, bmp280_oversam
 
 /**
  * @brief      get pressure oversampling
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *oversampling points to a oversampling buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *oversampling pointer to a oversampling buffer
  * @return     status code
  *             - 0 success
  *             - 1 get pressure oversampling failed
@@ -854,8 +854,8 @@ uint8_t bmp280_get_pressure_oversampling(bmp280_handle_t *handle, bmp280_oversam
 
 /**
  * @brief     set mode
- * @param[in] *handle points to a bmp280 handle structure
- * @param[in] mode is the set mode
+ * @param[in] *handle pointer to a bmp280 handle structure
+ * @param[in] mode chip mode
  * @return    status code
  *            - 0 success
  *            - 1 set mode failed
@@ -896,8 +896,8 @@ uint8_t bmp280_set_mode(bmp280_handle_t *handle, bmp280_mode_t mode)
 
 /**
  * @brief      get mode
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *mode points to a mode buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *mode pointer to a mode buffer
  * @return     status code
  *             - 0 success
  *             - 1 get mode failed
@@ -931,8 +931,8 @@ uint8_t bmp280_get_mode(bmp280_handle_t *handle, bmp280_mode_t *mode)
 
 /**
  * @brief     set standby time
- * @param[in] *handle points to a bmp280 handle structure
- * @param[in] standby_time is the set standby time
+ * @param[in] *handle pointer to a bmp280 handle structure
+ * @param[in] standby_time standby time
  * @return    status code
  *            - 0 success
  *            - 1 set standby time failed
@@ -973,8 +973,8 @@ uint8_t bmp280_set_standby_time(bmp280_handle_t *handle, bmp280_standby_time_t s
 
 /**
  * @brief      get standby time
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *standby_time points to a standby time buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *standby_time pointer to a standby time buffer
  * @return     status code
  *             - 0 success
  *             - 1 get standby time failed
@@ -1008,8 +1008,8 @@ uint8_t bmp280_get_standby_time(bmp280_handle_t *handle, bmp280_standby_time_t *
 
 /**
  * @brief     set filter
- * @param[in] *handle points to a bmp280 handle structure
- * @param[in] filter is the set filter
+ * @param[in] *handle pointer to a bmp280 handle structure
+ * @param[in] filter input filter
  * @return    status code
  *            - 0 success
  *            - 1 set filter failed
@@ -1050,8 +1050,8 @@ uint8_t bmp280_set_filter(bmp280_handle_t *handle, bmp280_filter_t filter)
 
 /**
  * @brief      get filter
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *filter points to a filter buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *filter pointer to a filter buffer
  * @return     status code
  *             - 0 success
  *             - 1 get filter failed
@@ -1085,8 +1085,8 @@ uint8_t bmp280_get_filter(bmp280_handle_t *handle, bmp280_filter_t *filter)
 
 /**
  * @brief     set spi wire
- * @param[in] *handle points to a bmp280 handle structure
- * @param[in] spi is the spi wire
+ * @param[in] *handle pointer to a bmp280 handle structure
+ * @param[in] spi spi wire
  * @return    status code
  *            - 0 success
  *            - 1 set spi wire failed
@@ -1127,8 +1127,8 @@ uint8_t bmp280_set_spi_wire(bmp280_handle_t *handle, bmp280_spi_wire_t spi)
 
 /**
  * @brief      get spi wire
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *spi points to a spi wire buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *spi pointer to a spi wire buffer
  * @return     status code
  *             - 0 success
  *             - 1 get spi wire failed
@@ -1162,9 +1162,9 @@ uint8_t bmp280_get_spi_wire(bmp280_handle_t *handle, bmp280_spi_wire_t *spi)
 
 /**
  * @brief      read the pressure data
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *pressure_raw points to a raw pressure buffer
- * @param[out] *pressure_pa points to a converted pressure buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *pressure_raw pointer to a raw pressure buffer
+ * @param[out] *pressure_pa pointer to a converted pressure buffer
  * @return     status code
  *             - 0 success
  *             - 1 pressure read failed
@@ -1300,9 +1300,9 @@ uint8_t bmp280_read_pressure(bmp280_handle_t *handle, uint32_t *pressure_raw, fl
 
 /**
  * @brief      read the temperature data
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *temperature_raw points to a raw temperature buffer
- * @param[out] *temperature_c points to a converted temperature buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *temperature_raw pointer to a raw temperature buffer
+ * @param[out] *temperature_c pointer to a converted temperature buffer
  * @return     status code
  *             - 0 success
  *             - 1 temperature read failed
@@ -1416,11 +1416,11 @@ uint8_t bmp280_read_temperature(bmp280_handle_t *handle, uint32_t *temperature_r
 
 /**
  * @brief      read the temperature and pressure data
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[out] *temperature_raw points to a raw temperature buffer
- * @param[out] *temperature_c points to a converted temperature buffer
- * @param[out] *pressure_raw points to a raw pressure buffer
- * @param[out] *pressure_pa points to a converted pressure buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[out] *temperature_raw pointer to a raw temperature buffer
+ * @param[out] *temperature_c pointer to a converted temperature buffer
+ * @param[out] *pressure_raw pointer to a raw pressure buffer
+ * @param[out] *pressure_pa pointer to a converted pressure buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -1555,9 +1555,9 @@ uint8_t bmp280_read_temperature_pressure(bmp280_handle_t *handle, uint32_t *temp
 
 /**
  * @brief     set the chip register
- * @param[in] *handle points to a bmp280 handle structure
- * @param[in] reg is the iic register address
- * @param[in] value is the data write to the register
+ * @param[in] *handle pointer to a bmp280 handle structure
+ * @param[in] reg iic register address
+ * @param[in] value data written to the register
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -1581,9 +1581,9 @@ uint8_t bmp280_set_reg(bmp280_handle_t *handle, uint8_t reg, uint8_t value)
 
 /**
  * @brief      get the chip register
- * @param[in]  *handle points to a bmp280 handle structure
- * @param[in]  reg is the iic register address
- * @param[out] *value points to a read data buffer
+ * @param[in]  *handle pointer to a bmp280 handle structure
+ * @param[in]  reg iic register address
+ * @param[out] *value pointer to a read data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -1607,7 +1607,7 @@ uint8_t bmp280_get_reg(bmp280_handle_t *handle, uint8_t reg, uint8_t *value)
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a bmp280 info structure
+ * @param[out] *info pointer to a bmp280 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
