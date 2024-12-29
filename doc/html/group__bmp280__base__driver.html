@@ -532,7 +532,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -579,8 +579,8 @@ Functions</h2></td></tr>
 <p>get the iic address pin </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*addr_pin</td><td>points to an iic address pin buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*addr_pin</td><td>pointer to an iic address pin buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -624,8 +624,8 @@ Functions</h2></td></tr>
 <p>get filter </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*filter</td><td>points to a filter buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*filter</td><td>pointer to a filter buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -671,8 +671,8 @@ Functions</h2></td></tr>
 <p>get the interface </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*interface</td><td>points to a chip interface buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*interface</td><td>pointer to a chip interface buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -716,8 +716,8 @@ Functions</h2></td></tr>
 <p>get mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*mode</td><td>points to a mode buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*mode</td><td>pointer to a mode buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -763,8 +763,8 @@ Functions</h2></td></tr>
 <p>get pressure oversampling </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*oversampling</td><td>points to a oversampling buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*oversampling</td><td>pointer to a oversampling buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -810,8 +810,8 @@ Functions</h2></td></tr>
 <p>get spi wire </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*spi</td><td>points to a spi wire buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*spi</td><td>pointer to a spi wire buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -857,8 +857,8 @@ Functions</h2></td></tr>
 <p>get standby time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*standby_time</td><td>points to a standby time buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*standby_time</td><td>pointer to a standby time buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -904,8 +904,8 @@ Functions</h2></td></tr>
 <p>get status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -951,8 +951,8 @@ Functions</h2></td></tr>
 <p>get temperatue oversampling </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*oversampling</td><td>points to a oversampling buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*oversampling</td><td>pointer to a oversampling buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -988,7 +988,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to a bmp280 info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to a bmp280 info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -1022,7 +1022,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -1077,9 +1077,9 @@ Functions</h2></td></tr>
 <p>read the pressure data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*pressure_raw</td><td>points to a raw pressure buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*pressure_pa</td><td>points to a converted pressure buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*pressure_raw</td><td>pointer to a raw pressure buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*pressure_pa</td><td>pointer to a converted pressure buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1133,9 +1133,9 @@ Functions</h2></td></tr>
 <p>read the temperature data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>points to a raw temperature buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_c</td><td>points to a converted temperature buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>pointer to a raw temperature buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_c</td><td>pointer to a converted temperature buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1201,11 +1201,11 @@ Functions</h2></td></tr>
 <p>read the temperature and pressure data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>points to a raw temperature buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_c</td><td>points to a converted temperature buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*pressure_raw</td><td>points to a raw pressure buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*pressure_pa</td><td>points to a converted pressure buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>pointer to a raw temperature buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_c</td><td>pointer to a converted temperature buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*pressure_raw</td><td>pointer to a raw pressure buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*pressure_pa</td><td>pointer to a converted pressure buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1253,8 +1253,8 @@ Functions</h2></td></tr>
 <p>set the iic address pin </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr_pin</td><td>is the iic address pin </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr_pin</td><td>iic address pin </td></tr>
   </table>
   </dd>
 </dl>
@@ -1298,8 +1298,8 @@ Functions</h2></td></tr>
 <p>set filter </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>is the set filter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>input filter </td></tr>
   </table>
   </dd>
 </dl>
@@ -1345,8 +1345,8 @@ Functions</h2></td></tr>
 <p>set the interface </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">interface</td><td>is the chip interface </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interface</td><td>chip interface </td></tr>
   </table>
   </dd>
 </dl>
@@ -1390,8 +1390,8 @@ Functions</h2></td></tr>
 <p>set mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the set mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>chip mode </td></tr>
   </table>
   </dd>
 </dl>
@@ -1437,8 +1437,8 @@ Functions</h2></td></tr>
 <p>set pressure oversampling </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">oversampling</td><td>is the pressure oversampling </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">oversampling</td><td>pressure oversampling </td></tr>
   </table>
   </dd>
 </dl>
@@ -1484,8 +1484,8 @@ Functions</h2></td></tr>
 <p>set spi wire </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">spi</td><td>is the spi wire </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spi</td><td>spi wire </td></tr>
   </table>
   </dd>
 </dl>
@@ -1531,8 +1531,8 @@ Functions</h2></td></tr>
 <p>set standby time </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">standby_time</td><td>is the set standby time </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">standby_time</td><td>standby time </td></tr>
   </table>
   </dd>
 </dl>
@@ -1578,8 +1578,8 @@ Functions</h2></td></tr>
 <p>set temperatue oversampling </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">oversampling</td><td>is the temperatue oversampling </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">oversampling</td><td>temperatue oversampling </td></tr>
   </table>
   </dd>
 </dl>
@@ -1615,7 +1615,7 @@ Functions</h2></td></tr>
 <p>soft reset </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a bmp280 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a bmp280 handle structure </td></tr>
   </table>
   </dd>
 </dl>

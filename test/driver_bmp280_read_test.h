@@ -50,9 +50,9 @@ extern "C"{
 
 /**
  * @brief     read test
- * @param[in] interface is the set interface
- * @param[in] addr_pin is the chip address pin
- * @param[in] times is the read times
+ * @param[in] interface chip interface
+ * @param[in] addr_pin chip address pin
+ * @param[in] times test times
  * @return    status code
  *            - 0 success
  *            - 1 test failed
