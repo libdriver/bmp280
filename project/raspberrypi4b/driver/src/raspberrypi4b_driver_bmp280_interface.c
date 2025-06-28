@@ -196,5 +196,5 @@ void bmp280_interface_debug_print(const char *const fmt, ...)
     va_end(args);
     
     len = strlen((char *)str);
-    (void)printf((uint8_t *)str, len);
+    printf("%s\n", str);
 }
