@@ -1,3 +1,9 @@
+## 1.0.8 (2025-07-12)
+
+## Bug Fixes
+
+- fix printf bugs
+
 ## 1.0.7 (2025-04-17)
 
 ## Bug Fixes
