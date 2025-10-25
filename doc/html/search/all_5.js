@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['mainpage_2eh_176',['mainpage.h',['../mainpage_8h.html',1,'']]],
-  ['manufacturer_5fname_177',['manufacturer_name',['../structbmp280__info__s.html#ad25285dbf810c90f8eaf3fcef6f2b2ea',1,'bmp280_info_s']]],
-  ['manufacturer_5fname_178',['MANUFACTURER_NAME',['../driver__bmp280_8c.html#aaa2b8f5b105c3019df0cb346f472e803',1,'driver_bmp280.c']]],
-  ['max_5fcurrent_179',['MAX_CURRENT',['../driver__bmp280_8c.html#a2989837a37d6d63b59c6dd541b785435',1,'driver_bmp280.c']]],
-  ['max_5fcurrent_5fma_180',['max_current_ma',['../structbmp280__info__s.html#a9db82802561bf22d799b03a345f1d1dc',1,'bmp280_info_s']]]
+  ['iic_5faddr_0',['iic_addr',['../structbmp280__handle__s.html#ae4fb63dc1b166464d5da3aa753b0805a',1,'bmp280_handle_s']]],
+  ['iic_5fdeinit_1',['iic_deinit',['../structbmp280__handle__s.html#af6963bbad902ca6e43942b48c07986c3',1,'bmp280_handle_s']]],
+  ['iic_5finit_2',['iic_init',['../structbmp280__handle__s.html#a8826dd07625f8d90859ce9bd09628d61',1,'bmp280_handle_s']]],
+  ['iic_5fread_3',['iic_read',['../structbmp280__handle__s.html#af4ef726288b88f51a846483803a1249b',1,'bmp280_handle_s']]],
+  ['iic_5fspi_4',['iic_spi',['../structbmp280__handle__s.html#a00209e629162307269baa592e51144ac',1,'bmp280_handle_s']]],
+  ['iic_5fwrite_5',['iic_write',['../structbmp280__handle__s.html#adca3ee7a793bbf510d5267daf0fcf1c5',1,'bmp280_handle_s']]],
+  ['inited_6',['inited',['../structbmp280__handle__s.html#a19bedf28d2b9748f6a62d9ae93f4e68f',1,'bmp280_handle_s']]],
+  ['interface_7',['interface',['../structbmp280__info__s.html#aebaa6c28dd4f2c3dc27566fcb910fd28',1,'bmp280_info_s']]],
+  ['interface_20driver_20function_8',['bmp280 interface driver function',['../group__bmp280__interface__driver.html',1,'']]]
 ];
