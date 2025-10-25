@@ -106,7 +106,7 @@ find_package(bmp280 REQUIRED)
    bmp280 (-t read | --test=read) [--addr=<0 | 1>] [--interface=<iic | spi>] [--times=<num>]
    ```
 
-8. Run bmp280 read function, num means the read times.
+6. Run bmp280 read function, num means the read times.
 
    ```shell
    bmp280 (-e read | --example=read) [--addr=<0 | 1>] [--interface=<iic | spi>] [--times=<num>]

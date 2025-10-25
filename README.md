@@ -10,7 +10,7 @@
 
 The BMP280 is an absolute barometric pressure sensor, which is especially feasible for mobile applications. Its small dimensions and its low power consumption allow for the implementation in battery-powered devices such as mobile phones, GPS modules or watches. The BMP280 is based on Bosch’s proven piezo-resistive pressure sensor technology featuring high accuracy and linearity as well as long-term stability and high EMC robustness. Numerous device operation options guarantee for highest flexibility. The device is optimized in terms of power consumption, resolution and filter performance.
 
-LibDriver BMP280 is a full-featured driver of BMP280 launched by LibDriver.It provides continuous reading of pressure and temperature, single reading of pressure and temperature and other functions. LibDriver is MISRA compliant.
+LibDriver BMP280 is a full-featured driver for BMP280, launched by LibDriver.It provides continuous reading, single reading and additional features. LibDriver is MISRA compliant.
 
 ### Table of Contents
 

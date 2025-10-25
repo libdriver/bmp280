@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['libdriver_20bmp280_390',['LibDriver BMP280',['../index.html',1,'']]]
+  ['bmp280_0',['LibDriver BMP280',['../index.html',1,'']]]
 ];
