@@ -168,19 +168,19 @@ bmp280: set addr pin low.
 bmp280: check addr pin ok.
 bmp280: set addr pin high.
 bmp280: check addr pin ok.
-bmp280: bmp280_set_temperatue_oversampling/bmp280_get_temperatue_oversampling test.
-bmp280: set temperatue oversampling skip.
-bmp280: check temperatue oversampling ok.
-bmp280: set temperatue oversampling x1.
-bmp280: check temperatue oversampling ok.
-bmp280: set temperatue oversampling x2.
-bmp280: check temperatue oversampling ok.
-bmp280: set temperatue oversampling x4.
-bmp280: check temperatue oversampling ok.
-bmp280: set temperatue oversampling x8.
-bmp280: check temperatue oversampling ok.
-bmp280: set temperatue oversampling x16.
-bmp280: check temperatue oversampling ok.
+bmp280: bmp280_set_temperature_oversampling/bmp280_get_temperature_oversampling test.
+bmp280: set temperature oversampling skip.
+bmp280: check temperature oversampling ok.
+bmp280: set temperature oversampling x1.
+bmp280: check temperature oversampling ok.
+bmp280: set temperature oversampling x2.
+bmp280: check temperature oversampling ok.
+bmp280: set temperature oversampling x4.
+bmp280: check temperature oversampling ok.
+bmp280: set temperature oversampling x8.
+bmp280: check temperature oversampling ok.
+bmp280: set temperature oversampling x16.
+bmp280: check temperature oversampling ok.
 bmp280: bmp280_set_pressure_oversampling/bmp280_get_pressure_oversampling test.
 bmp280: set pressure oversampling skip.
 bmp280: check pressure oversampling ok.

@@ -219,152 +219,152 @@ uint8_t bmp280_register_test(bmp280_interface_t interface, bmp280_address_t addr
         return 1;
     }
     
-    /* bmp280_set_temperatue_oversampling/bmp280_get_temperatue_oversampling test */
-    bmp280_interface_debug_print("bmp280: bmp280_set_temperatue_oversampling/bmp280_get_temperatue_oversampling test.\n");
+    /* bmp280_set_temperature_oversampling/bmp280_get_temperature_oversampling test */
+    bmp280_interface_debug_print("bmp280: bmp280_set_temperature_oversampling/bmp280_get_temperature_oversampling test.\n");
     
-    /* set temperatue oversampling skip */
-    res = bmp280_set_temperatue_oversampling(&gs_handle, BMP280_OVERSAMPLING_SKIP);
+    /* set temperature oversampling skip */
+    res = bmp280_set_temperature_oversampling(&gs_handle, BMP280_OVERSAMPLING_SKIP);
     if (res != 0)
     {
-        bmp280_interface_debug_print("bmp280: set temperatue oversampling failed.\n");
+        bmp280_interface_debug_print("bmp280: set temperature oversampling failed.\n");
         (void)bmp280_deinit(&gs_handle); 
         
         return 1;
     }
     
     /* output */
-    bmp280_interface_debug_print("bmp280: set temperatue oversampling skip.\n");
+    bmp280_interface_debug_print("bmp280: set temperature oversampling skip.\n");
     
-    /* get temperatue oversampling */
-    res = bmp280_get_temperatue_oversampling(&gs_handle, &oversampling);
+    /* get temperature oversampling */
+    res = bmp280_get_temperature_oversampling(&gs_handle, &oversampling);
     if (res != 0)
     {
-        bmp280_interface_debug_print("bmp280: get temperatue oversampling failed.\n");
+        bmp280_interface_debug_print("bmp280: get temperature oversampling failed.\n");
         (void)bmp280_deinit(&gs_handle); 
         
         return 1;
     }
-    bmp280_interface_debug_print("bmp280: check temperatue oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_SKIP ? "ok" : "error");
+    bmp280_interface_debug_print("bmp280: check temperature oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_SKIP ? "ok" : "error");
     
-    /* set temperatue oversampling x1 */
-    res = bmp280_set_temperatue_oversampling(&gs_handle, BMP280_OVERSAMPLING_x1);
+    /* set temperature oversampling x1 */
+    res = bmp280_set_temperature_oversampling(&gs_handle, BMP280_OVERSAMPLING_x1);
     if (res != 0)
     {
-        bmp280_interface_debug_print("bmp280: set temperatue oversampling failed.\n");
-        (void)bmp280_deinit(&gs_handle); 
-        
-        return 1;
-    }
-    
-    /* output */
-    bmp280_interface_debug_print("bmp280: set temperatue oversampling x1.\n");
-    
-    /* get temperatue oversampling */
-    res = bmp280_get_temperatue_oversampling(&gs_handle, &oversampling);
-    if (res != 0)
-    {
-        bmp280_interface_debug_print("bmp280: get temperatue oversampling failed.\n");
-        (void)bmp280_deinit(&gs_handle); 
-        
-        return 1;
-    }
-    bmp280_interface_debug_print("bmp280: check temperatue oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_x1 ? "ok" : "error");
-    
-    /* set temperatue oversampling x2 */
-    res = bmp280_set_temperatue_oversampling(&gs_handle, BMP280_OVERSAMPLING_x2);
-    if (res != 0)
-    {
-        bmp280_interface_debug_print("bmp280: set temperatue oversampling failed.\n");
+        bmp280_interface_debug_print("bmp280: set temperature oversampling failed.\n");
         (void)bmp280_deinit(&gs_handle); 
         
         return 1;
     }
     
     /* output */
-    bmp280_interface_debug_print("bmp280: set temperatue oversampling x2.\n");
+    bmp280_interface_debug_print("bmp280: set temperature oversampling x1.\n");
     
-    /* get temperatue oversampling */
-    res = bmp280_get_temperatue_oversampling(&gs_handle, &oversampling);
+    /* get temperature oversampling */
+    res = bmp280_get_temperature_oversampling(&gs_handle, &oversampling);
     if (res != 0)
     {
-        bmp280_interface_debug_print("bmp280: get temperatue oversampling failed.\n");
+        bmp280_interface_debug_print("bmp280: get temperature oversampling failed.\n");
         (void)bmp280_deinit(&gs_handle); 
         
         return 1;
     }
-    bmp280_interface_debug_print("bmp280: check temperatue oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_x2 ? "ok" : "error");
+    bmp280_interface_debug_print("bmp280: check temperature oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_x1 ? "ok" : "error");
     
-    /* set temperatue oversampling x4 */
-    res = bmp280_set_temperatue_oversampling(&gs_handle, BMP280_OVERSAMPLING_x4);
+    /* set temperature oversampling x2 */
+    res = bmp280_set_temperature_oversampling(&gs_handle, BMP280_OVERSAMPLING_x2);
     if (res != 0)
     {
-        bmp280_interface_debug_print("bmp280: set temperatue oversampling failed.\n");
-        (void)bmp280_deinit(&gs_handle); 
-        
-        return 1;
-    }
-    
-    /* output */
-    bmp280_interface_debug_print("bmp280: set temperatue oversampling x4.\n");
-    
-    /* get temperatue oversampling */
-    res = bmp280_get_temperatue_oversampling(&gs_handle, &oversampling);
-    if (res != 0)
-    {
-        bmp280_interface_debug_print("bmp280: get temperatue oversampling failed.\n");
-        (void)bmp280_deinit(&gs_handle); 
-        
-        return 1;
-    }
-    bmp280_interface_debug_print("bmp280: check temperatue oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_x4 ? "ok" : "error");
-    
-    /* set temperatue oversampling x8 */
-    res = bmp280_set_temperatue_oversampling(&gs_handle, BMP280_OVERSAMPLING_x8);
-    if (res != 0)
-    {
-        bmp280_interface_debug_print("bmp280: set temperatue oversampling failed.\n");
+        bmp280_interface_debug_print("bmp280: set temperature oversampling failed.\n");
         (void)bmp280_deinit(&gs_handle); 
         
         return 1;
     }
     
     /* output */
-    bmp280_interface_debug_print("bmp280: set temperatue oversampling x8.\n");
+    bmp280_interface_debug_print("bmp280: set temperature oversampling x2.\n");
     
-    /* get temperatue oversampling */
-    res = bmp280_get_temperatue_oversampling(&gs_handle, &oversampling);
+    /* get temperature oversampling */
+    res = bmp280_get_temperature_oversampling(&gs_handle, &oversampling);
     if (res != 0)
     {
-        bmp280_interface_debug_print("bmp280: get temperatue oversampling failed.\n");
+        bmp280_interface_debug_print("bmp280: get temperature oversampling failed.\n");
         (void)bmp280_deinit(&gs_handle); 
         
         return 1;
     }
-    bmp280_interface_debug_print("bmp280: check temperatue oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_x8 ? "ok" : "error");
+    bmp280_interface_debug_print("bmp280: check temperature oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_x2 ? "ok" : "error");
     
-    /* set temperatue oversampling x16 */
-    res = bmp280_set_temperatue_oversampling(&gs_handle, BMP280_OVERSAMPLING_x16);
+    /* set temperature oversampling x4 */
+    res = bmp280_set_temperature_oversampling(&gs_handle, BMP280_OVERSAMPLING_x4);
     if (res != 0)
     {
-        bmp280_interface_debug_print("bmp280: set temperatue oversampling failed.\n");
+        bmp280_interface_debug_print("bmp280: set temperature oversampling failed.\n");
         (void)bmp280_deinit(&gs_handle); 
         
         return 1;
     }
     
     /* output */
-    bmp280_interface_debug_print("bmp280: set temperatue oversampling x16.\n");
+    bmp280_interface_debug_print("bmp280: set temperature oversampling x4.\n");
     
-    /* get temperatue oversampling */
-    res = bmp280_get_temperatue_oversampling(&gs_handle, &oversampling);
+    /* get temperature oversampling */
+    res = bmp280_get_temperature_oversampling(&gs_handle, &oversampling);
     if (res != 0)
     {
-        bmp280_interface_debug_print("bmp280: get temperatue oversampling failed.\n");
+        bmp280_interface_debug_print("bmp280: get temperature oversampling failed.\n");
         (void)bmp280_deinit(&gs_handle); 
         
         return 1;
     }
-    bmp280_interface_debug_print("bmp280: check temperatue oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_x16 ? "ok" : "error");
+    bmp280_interface_debug_print("bmp280: check temperature oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_x4 ? "ok" : "error");
+    
+    /* set temperature oversampling x8 */
+    res = bmp280_set_temperature_oversampling(&gs_handle, BMP280_OVERSAMPLING_x8);
+    if (res != 0)
+    {
+        bmp280_interface_debug_print("bmp280: set temperature oversampling failed.\n");
+        (void)bmp280_deinit(&gs_handle); 
+        
+        return 1;
+    }
+    
+    /* output */
+    bmp280_interface_debug_print("bmp280: set temperature oversampling x8.\n");
+    
+    /* get temperature oversampling */
+    res = bmp280_get_temperature_oversampling(&gs_handle, &oversampling);
+    if (res != 0)
+    {
+        bmp280_interface_debug_print("bmp280: get temperature oversampling failed.\n");
+        (void)bmp280_deinit(&gs_handle); 
+        
+        return 1;
+    }
+    bmp280_interface_debug_print("bmp280: check temperature oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_x8 ? "ok" : "error");
+    
+    /* set temperature oversampling x16 */
+    res = bmp280_set_temperature_oversampling(&gs_handle, BMP280_OVERSAMPLING_x16);
+    if (res != 0)
+    {
+        bmp280_interface_debug_print("bmp280: set temperature oversampling failed.\n");
+        (void)bmp280_deinit(&gs_handle); 
+        
+        return 1;
+    }
+    
+    /* output */
+    bmp280_interface_debug_print("bmp280: set temperature oversampling x16.\n");
+    
+    /* get temperature oversampling */
+    res = bmp280_get_temperature_oversampling(&gs_handle, &oversampling);
+    if (res != 0)
+    {
+        bmp280_interface_debug_print("bmp280: get temperature oversampling failed.\n");
+        (void)bmp280_deinit(&gs_handle); 
+        
+        return 1;
+    }
+    bmp280_interface_debug_print("bmp280: check temperature oversampling %s.\n", oversampling == BMP280_OVERSAMPLING_x16 ? "ok" : "error");
     
     /* bmp280_set_pressure_oversampling/bmp280_get_pressure_oversampling test */
     bmp280_interface_debug_print("bmp280: bmp280_set_pressure_oversampling/bmp280_get_pressure_oversampling test.\n");
