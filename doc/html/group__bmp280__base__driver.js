@@ -96,7 +96,7 @@ var group__bmp280__base__driver =
     [ "bmp280_get_spi_wire", "group__bmp280__base__driver.html#ga950014ee73c9907f8f46e4fe4081fd10", null ],
     [ "bmp280_get_standby_time", "group__bmp280__base__driver.html#ga80e0c24aad28ca5949e2ba1c7cb27fd7", null ],
     [ "bmp280_get_status", "group__bmp280__base__driver.html#gaec37861522ed82eb39d25c0081b61261", null ],
-    [ "bmp280_get_temperatue_oversampling", "group__bmp280__base__driver.html#ga53ff44d4a0faee94d56b0fbd847b23f7", null ],
+    [ "bmp280_get_temperature_oversampling", "group__bmp280__base__driver.html#ga11e7cdb138bea96f3a30c5bfae62ee0d", null ],
     [ "bmp280_info", "group__bmp280__base__driver.html#ga2e093970a16f0cdc1f107c398d7ee869", null ],
     [ "bmp280_init", "group__bmp280__base__driver.html#gaf269b001d67d12b2ad68fd8f049716f7", null ],
     [ "bmp280_read_pressure", "group__bmp280__base__driver.html#ga8c233951bbecbfd1807aea45180df6fa", null ],
@@ -109,6 +109,6 @@ var group__bmp280__base__driver =
     [ "bmp280_set_pressure_oversampling", "group__bmp280__base__driver.html#ga99c091395f80ce8cdb5d751eed54aeb0", null ],
     [ "bmp280_set_spi_wire", "group__bmp280__base__driver.html#ga8b3da0ddfce2a80f6cf2f13f07f0c16c", null ],
     [ "bmp280_set_standby_time", "group__bmp280__base__driver.html#gad229b38572b7fe4e4296d51f7d1ed326", null ],
-    [ "bmp280_set_temperatue_oversampling", "group__bmp280__base__driver.html#gafb9b6307c62debdff42af03f2abc5b0c", null ],
+    [ "bmp280_set_temperature_oversampling", "group__bmp280__base__driver.html#ga30a30f7c47431c00a31df57b2ee46aeb", null ],
     [ "bmp280_soft_reset", "group__bmp280__base__driver.html#ga18c307f3ca06cb421b9e3d66b02e6b2c", null ]
 ];
