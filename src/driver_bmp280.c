@@ -539,30 +539,58 @@ uint8_t bmp280_init(bmp280_handle_t *handle)
     if (a_bmp280_iic_spi_read(handle, BMP280_REG_ID, (uint8_t *)&id, 1) != 0)        /* read chip id */
     {
         handle->debug_print("bmp280: read id failed.\n");                            /* read id failed */
-        (void)handle->iic_deinit();                                                  /* iic deinit */
-
+        if (handle->iic_spi == BMP280_INTERFACE_IIC)                                 /* iic interface */
+        {
+            (void)handle->iic_deinit();                                              /* iic deinit */
+        }
+        else                                                                         /* spi interface */
+        {
+            (void)handle->spi_deinit();                                              /* spi deinit */
+        }
+        
         return 4;                                                                    /* return error */
     }
     if (id != 0x58)                                                                  /* check id */
     {
         handle->debug_print("bmp280: id is error.\n");                               /* id is error */
-        (void)handle->iic_deinit();                                                  /* iic deinit */
-
+        if (handle->iic_spi == BMP280_INTERFACE_IIC)                                 /* iic interface */
+        {
+            (void)handle->iic_deinit();                                              /* iic deinit */
+        }
+        else                                                                         /* spi interface */
+        {
+            (void)handle->spi_deinit();                                              /* spi deinit */
+        }
+        
         return 4;                                                                    /* return error */
     }
     reg = 0xB6;                                                                      /* set the reset value */
     if (a_bmp280_iic_spi_write(handle, BMP280_REG_RESET, &reg, 1) != 0)              /* reset the chip */
     {
         handle->debug_print("bmp280: reset failed.\n");                              /* reset failed */
-        (void)handle->iic_deinit();                                                  /* iic deinit */
-
+        if (handle->iic_spi == BMP280_INTERFACE_IIC)                                 /* iic interface */
+        {
+            (void)handle->iic_deinit();                                              /* iic deinit */
+        }
+        else                                                                         /* spi interface */
+        {
+            (void)handle->spi_deinit();                                              /* spi deinit */
+        }
+        
         return 5;                                                                    /* return error */
     }
     handle->delay_ms(5);                                                             /* delay 5ms */
     if (a_bmp280_get_nvm_calibration(handle) != 0)                                   /* get nvm calibration */
     {
-        (void)handle->iic_deinit();                                                  /* iic deinit */
-
+        if (handle->iic_spi == BMP280_INTERFACE_IIC)                                 /* iic interface */
+        {
+            (void)handle->iic_deinit();                                              /* iic deinit */
+        }
+        else                                                                         /* spi interface */
+        {
+            (void)handle->spi_deinit();                                              /* spi deinit */
+        }
+        
         return 6;                                                                    /* return error */
     }
     handle->inited = 1;                                                              /* flag finish initialization */

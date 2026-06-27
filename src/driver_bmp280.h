@@ -88,7 +88,7 @@ typedef enum
  */
 typedef enum
 {
-    BMP280_OVERSAMPLING_SKIP = 0x00,        /**< oversampling x1 */
+    BMP280_OVERSAMPLING_SKIP = 0x00,        /**< skip */
     BMP280_OVERSAMPLING_x1   = 0x01,        /**< oversampling x1 */
     BMP280_OVERSAMPLING_x2   = 0x02,        /**< oversampling x2 */
     BMP280_OVERSAMPLING_x4   = 0x03,        /**< oversampling x4 */
